@@ -1,0 +1,13 @@
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\TeduShop.Common.dll.config
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\TeduShop.Common.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\TeduShop.Common.pdb
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\EntityFramework.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\EntityFramework.SqlServer.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\EntityFramework.xml
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\EntityFramework.SqlServer.xml
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\obj\Debug\TeduShop.Common.dll
+E:\BatDauLaiNheTuanAnh\TeduShop.Common\obj\Debug\TeduShop.Common.pdb
