@@ -11,3 +11,17 @@ E:\BatDauLaiNheTuanAnh\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.x
 E:\BatDauLaiNheTuanAnh\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\BatDauLaiNheTuanAnh\TeduShop.Model\obj\Debug\TeduShop.Model.dll
 E:\BatDauLaiNheTuanAnh\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll.config
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\TeduShop.Model.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\EntityFramework.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\EntityFramework.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csprojResolveAssemblyReference.cache

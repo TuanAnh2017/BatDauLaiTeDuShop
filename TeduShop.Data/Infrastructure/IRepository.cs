@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace TeduShop.Data.Infrastructure
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class // T là đại diện cho kiểu mà chúng ta chưa biết, nó có thể là bất cứ kiểu nào
     {
         // Marks an entity as new
         void Add(T entity);

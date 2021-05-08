@@ -43,7 +43,7 @@ namespace TeduShop.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
             // Cái này sẽ chạy khi chúng ta khởi tạo Entity Framework
         }
     }
