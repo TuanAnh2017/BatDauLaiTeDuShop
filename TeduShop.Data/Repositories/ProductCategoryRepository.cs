@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace TeduShop.Data.Repositories
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository: IRepository<ProductCategory>
     // Định nghĩa các phương thức chúng ta cần phải thêm mà nó ko có trong RepositoryBase
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
