@@ -13,7 +13,7 @@ namespace TeduShop.Service
 
         void Update(Post post);
 
-        void Delete(int id);
+        void DeleteByID(int id);
 
         IEnumerable<Post> GetAll();
 
@@ -41,9 +41,9 @@ namespace TeduShop.Service
             _postRepository.Add(post);
         }
 
-        public void Delete(int id)
+        public void DeleteByID(int id)
         {
-            _postRepository.Delete(id);
+            _postRepository.DeleteByID(id);
         }
 
         public IEnumerable<Post> GetAll()

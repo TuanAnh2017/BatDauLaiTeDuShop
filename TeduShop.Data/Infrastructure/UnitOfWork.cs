@@ -17,7 +17,7 @@
 
         public void Commit()
         {
-            DbContext.SaveChangesAsync();
+            DbContext.SaveChanges();
         }
     }
 }

@@ -116,3 +116,11 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\System.Web.WebPages.Deplo
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\obj\Debug\TeduShop.UnitTest.csprojResolveAssemblyReference.cache
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\obj\Debug\TeduShop.UnitTest.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\obj\Debug\TeduShop.UnitTest.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\Castle.Core.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\Moq.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\Castle.Core.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\Moq.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.xml
