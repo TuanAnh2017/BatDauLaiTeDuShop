@@ -38,3 +38,4 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.Data\obj\Debug\TeduShop.Data.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Data\obj\Debug\TeduShop.Data.pdb
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Data\obj\Debug\TeduShop.Data.Migrations.InitialDB.resources
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Data\obj\Debug\TeduShop.Data.csproj.GenerateResource.Cache
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Data\obj\Debug\TeduShop.Data.Migrations.InitialDB1.resources

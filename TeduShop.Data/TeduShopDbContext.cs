@@ -31,7 +31,7 @@ namespace TeduShop.Data
         public DbSet<PostCategory> PostCategorys { get; set; }
         public DbSet<PostTag> PostTags { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<ProductCategory > ProductCategorys { get; set; }
+        public DbSet<ProductCategory> ProductCategorys { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Slide> Slides { get; set; }
         public DbSet<SupportOnline> SupportOnlines { get; set; }
@@ -39,6 +39,7 @@ namespace TeduShop.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<VisitorStatistic> VisitorStatistics { get; set; }
         public DbSet<Page> Pages { get; set; }
+        public DbSet<LogError> LogErrors { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

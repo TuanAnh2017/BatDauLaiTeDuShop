@@ -17,6 +17,7 @@ namespace TeduShop.Service
         IEnumerable<PostCategory> GetAll();
         IEnumerable<PostCategory> GetAllByParentId(int parentId);
         PostCategory GetbyId(int id);
+        void Save();
 
     }
     public class PostCategoryService : IPostCategoryService
@@ -56,7 +57,12 @@ namespace TeduShop.Service
 
         public void Update(PostCategory postCategory)
         {
-            _postCategoryRepository.Update(postCategory);
+            return _postCategoryRepository.Update(postCategory);
+        }
+
+        public void Save()
+        {
+            _unitOfWork.Commit();
         }
     }
 }

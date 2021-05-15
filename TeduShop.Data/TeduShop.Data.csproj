@@ -68,9 +68,14 @@
     <Compile Include="Migrations\202105081615252_InitialDB.Designer.cs">
       <DependentUpon>202105081615252_InitialDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105131621552_InitialDB1.cs" />
+    <Compile Include="Migrations\202105131621552_InitialDB1.Designer.cs">
+      <DependentUpon>202105131621552_InitialDB1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\LogErrorRepository.cs" />
     <Compile Include="Repositories\MenuRepository.cs" />
     <Compile Include="Repositories\MenuGroupRepository.cs" />
     <Compile Include="Repositories\OrderDetailRepository.cs" />
@@ -111,6 +116,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105081615252_InitialDB.resx">
       <DependentUpon>202105081615252_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105131621552_InitialDB1.resx">
+      <DependentUpon>202105131621552_InitialDB1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
