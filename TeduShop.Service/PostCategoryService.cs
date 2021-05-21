@@ -57,7 +57,7 @@ namespace TeduShop.Service
 
         public void Update(PostCategory postCategory)
         {
-            return _postCategoryRepository.Update(postCategory);
+            _postCategoryRepository.Update(postCategory);
         }
 
         public void Save()

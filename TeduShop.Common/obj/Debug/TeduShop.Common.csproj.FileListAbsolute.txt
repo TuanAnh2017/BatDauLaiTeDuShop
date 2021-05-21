@@ -24,3 +24,4 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.C
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Common\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Common\obj\Debug\TeduShop.Common.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Common\obj\Debug\TeduShop.Common.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Common\obj\Debug\TeduShop.Common.csprojResolveAssemblyReference.cache

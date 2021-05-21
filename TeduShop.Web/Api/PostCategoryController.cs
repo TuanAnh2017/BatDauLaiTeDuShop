@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using TeduShop.Model.Models;
@@ -15,13 +12,13 @@ namespace TeduShop.Web.Api
     {
         private IPostCategoryService _postCategory;
         private ILogErrorService _logError;
+
         public PostCategoryController(ILogErrorService logError, IPostCategoryService postCategory) : base(logError)
         {
-            this._logError = logError;
+            //this._logError = logError;
             this._postCategory = postCategory;
         }
 
-       
         public HttpResponseMessage Post(HttpRequestMessage request, PostCategory postCategory)
         {
             return CreatedHttpResponse(request, () =>
@@ -29,14 +26,14 @@ namespace TeduShop.Web.Api
                 HttpResponseMessage response = null;
                 if (ModelState.IsValid)
                 {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
                     var Category = _postCategory.Add(postCategory);
                     _postCategory.Save();
 
                     response = request.CreateResponse(HttpStatusCode.Created, Category);
+                }
+                else
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
                 return response;
             });
@@ -48,15 +45,15 @@ namespace TeduShop.Web.Api
             {
                 HttpResponseMessage response = null;
                 if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
+                {                   
                     _postCategory.Update(postCategory);
                     _postCategory.Save();
 
                     response = request.CreateResponse(HttpStatusCode.OK);
+                }
+                else
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                 }
                 return response;
             });
@@ -69,14 +66,14 @@ namespace TeduShop.Web.Api
                HttpResponseMessage response = null;
                if (ModelState.IsValid)
                {
-                   request.CreateErrorResponse(HttpStatusCode.BadGateway, ModelState);
-               }
-               else
-               {
                    _postCategory.DeleteByID(Id);
                    _postCategory.Save();
 
                    response = request.CreateResponse(HttpStatusCode.OK);
+               }
+               else
+               {
+                   request.CreateErrorResponse(HttpStatusCode.BadGateway, ModelState);
                }
                return response;
            });
@@ -90,17 +87,17 @@ namespace TeduShop.Web.Api
                HttpResponseMessage response = null;
                if (ModelState.IsValid)
                {
-                   request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                   var listCategory = _postCategory.GetAll();
+                   response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+                   return response;
                }
                else
                {
-                   var listCategory = _postCategory.GetAll();
-                   response = request.CreateErrorResponse(HttpStatusCode.OK, listCategory);
+                   request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                   return null;
                }
 
-               return response;
            });
         }
-
     }
 }
