@@ -1,33 +1,40 @@
-﻿using System.Net;
+﻿using AutoMapper;
+using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using TeduShop.Model.Models;
 using TeduShop.Service;
 using TeduShop.Web.Infrastructure.Core;
+using TeduShop.Web.Models;
+using TeduShop.Web.Infrastructure.Extensions;
+using System.Collections.Generic;
 
 namespace TeduShop.Web.Api
 {
     [RoutePrefix("api/postCategory")]
     public class PostCategoryController : ApiControllerBase
     {
-        private IPostCategoryService _postCategory;
+        private IPostCategoryService _postCategoryService;
         private ILogErrorService _logError;
 
         public PostCategoryController(ILogErrorService logError, IPostCategoryService postCategory) : base(logError)
         {
             //this._logError = logError;
-            this._postCategory = postCategory;
+            this._postCategoryService = postCategory;
         }
 
-        public HttpResponseMessage Post(HttpRequestMessage request, PostCategory postCategory)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request, PostCategoryViewModel postCategoryVm)
         {
             return CreatedHttpResponse(request, () =>
             {
                 HttpResponseMessage response = null;
                 if (ModelState.IsValid)
                 {
-                    var Category = _postCategory.Add(postCategory);
-                    _postCategory.Save();
+                    var postCategory = new PostCategory();
+                    postCategory.UpdatePostCategory(postCategoryVm);
+                    var Category = _postCategoryService.Add(postCategory);
+                    _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.Created, Category);
                 }
@@ -39,15 +46,18 @@ namespace TeduShop.Web.Api
             });
         }
 
-        public HttpResponseMessage Put(HttpRequestMessage request, PostCategory postCategory)
+        [Route("Update")]
+        public HttpResponseMessage Put(HttpRequestMessage request, PostCategoryViewModel postCategoryVm)
         {
             return CreatedHttpResponse(request, () =>
             {
                 HttpResponseMessage response = null;
                 if (ModelState.IsValid)
-                {                   
-                    _postCategory.Update(postCategory);
-                    _postCategory.Save();
+                {
+                    var postCategory = _postCategoryService.GetbyId(postCategoryVm.ID);
+                    postCategory.UpdatePostCategory(postCategoryVm);
+                    _postCategoryService.Update(postCategory);
+                    _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.OK);
                 }
@@ -66,8 +76,8 @@ namespace TeduShop.Web.Api
                HttpResponseMessage response = null;
                if (ModelState.IsValid)
                {
-                   _postCategory.DeleteByID(Id);
-                   _postCategory.Save();
+                   _postCategoryService.DeleteByID(Id);
+                   _postCategoryService.Save();
 
                    response = request.CreateResponse(HttpStatusCode.OK);
                }
@@ -87,8 +97,10 @@ namespace TeduShop.Web.Api
                HttpResponseMessage response = null;
                if (ModelState.IsValid)
                {
-                   var listCategory = _postCategory.GetAll();
-                   response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+                   var listPostCategory = _postCategoryService.GetAll();
+                   var listPostCategoryVm = Mapper.Map<List<PostCategoryViewModel>>(listPostCategory);
+
+                   response = request.CreateResponse(HttpStatusCode.OK, listPostCategoryVm);
                    return response;
                }
                else
@@ -96,7 +108,6 @@ namespace TeduShop.Web.Api
                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                    return null;
                }
-
            });
         }
     }

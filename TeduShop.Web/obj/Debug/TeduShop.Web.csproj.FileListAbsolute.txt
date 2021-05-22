@@ -133,3 +133,5 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\bin\System.Web.Http.xml
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\bin\System.Web.Http.WebHost.xml
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\obj\Debug\TeduShop.Web.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\obj\Debug\TeduShop.Web.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\bin\AutoMapper.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Web\bin\AutoMapper.xml

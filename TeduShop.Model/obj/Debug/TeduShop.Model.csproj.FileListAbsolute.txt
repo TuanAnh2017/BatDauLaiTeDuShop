@@ -25,3 +25,5 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.En
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csprojResolveAssemblyReference.cache
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\AutoMapper.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Model\bin\Debug\AutoMapper.xml

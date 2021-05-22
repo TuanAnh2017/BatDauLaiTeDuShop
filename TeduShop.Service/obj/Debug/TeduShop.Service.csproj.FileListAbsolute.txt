@@ -38,3 +38,5 @@ E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\bin\Debug\Microsoft.AspNet.Identity.
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\obj\Debug\TeduShop.Service.csprojResolveAssemblyReference.cache
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\obj\Debug\TeduShop.Service.dll
 E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\obj\Debug\TeduShop.Service.pdb
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\bin\Debug\AutoMapper.dll
+E:\BatDauLaiNheTuanAnh\Git\TeduShop.Service\bin\Debug\AutoMapper.xml
